@@ -1,4 +1,5 @@
-pragma solidity ^0.4.19;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8;
 
 contract voting {
     bool public isVoting;
@@ -15,7 +16,7 @@ contract voting {
     event StartVoting(address startedBy);
     event StopVoting(address stopedBy);
 
-    constructor() public{
+    constructor() {
         isVoting=false;
     }
 
